@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>掲示BAN</title>
+    </head>
+</html>
+    <body>
+        <p>どうもこんにちは、「掲示BAN」です。</p>
+        <p>ご自由に書き込まれてよろしいのですが、つまらないコメントをした方に関しては、BANさせていただきます＾▽＾</p>
+        <hr>
+        {{range .messageBoards}}
+        <p>{{.Content}}</p>
+        {{end}}
+        <hr>
+
+        <form action="">
+            <input name="username" required maxlength="32" placeholder="名前"><br>
+            <textarea name="comment" required maxlength="256" placeholder="コメント"></textarea><br>
+            <button type="submit">送信</button>
+        </form>
+    </body>
