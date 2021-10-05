@@ -8,6 +8,6 @@ WORKDIR /go/src/app
 
 ADD . /go/src/app
 
-RUN go get -u github.com/gin-gonic/gin \
+RUN go get github.com/gin-gonic/gin \
     github.com/go-sql-driver/mysql \
     github.com/jinzhu/gorm
